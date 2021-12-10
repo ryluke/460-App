@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+          background-image: url('city_lights.jpg');
+          background-size: cover;
+        }
+        </style>
+<head>
+    <title> Insert Preferences </title>
+    <link rel="stylesheet" href="entPref.css">
+</head>
+
+<body>
+
+	<h1>How Was Your Night?</h1>
+			<div class="preference-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <input type="text" placeholder="Where'd you go?" name="title" id="wheretxt">
+                   <br><br>
+                    </div>
+                    <div>
+                        <input type="number" placeholder= "Price" name="pricetxt" id="pricetxt">
+                        <br><br>
+                    </div>
+                    <div>
+                        <input type="number" placeholder= "Distance (in miles)" name="rangetxt" min="0" id="rangetxt">
+                        <br><br>
+                    </div>
+                    <div>
+                        <input type="text" placeholder= "Inside or Outside?" name="intxt" id="intxt">
+                    <br><br>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Go Again?" name="outtxt" id="outtxt">
+                   <br><br>
+                    </div>
+                    <div>  
+                    <inputclass="form-action-buttons">
+                    <input type="submit" value="Submit" id="submit">
+                
+                        <input type="button" onclick= "location.href='Login.html';" name="logo" id="logo" value="Log Out"> 
+                        </div>
+                    </div>
+                </form>
+		</div>
+		<br/>
+                <table class="list" id="PrefList">
+                    <thead>
+                        <tr>
+                            <th>Destination</th><br>
+                            <th>Price</th><br>
+                            <th>Distance</th><br>
+                            <th>Venue</th><br>
+                            <th>Future Visit?</th><br>
+                            <th>Actions</th><br>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="preferences.js"></script>
+</body>
+</html>
